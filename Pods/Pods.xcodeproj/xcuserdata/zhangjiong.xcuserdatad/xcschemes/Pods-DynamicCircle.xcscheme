@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CB8B8C42AE7BB4DB33B56FCCEC26E119"
+               BlueprintIdentifier = "F0437901E8FEECC369D9E340EB40D65E"
                BlueprintName = "Pods-DynamicCircle"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-DynamicCircle.a">

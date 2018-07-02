@@ -1,1 +1,0 @@
-../../../WCDB/objc/WCDB/interface/fts/WCTDatabase+FTS.h

@@ -1,1 +1,0 @@
-../../../WCDB/objc/WCDB/abstract/handle_statement.hpp

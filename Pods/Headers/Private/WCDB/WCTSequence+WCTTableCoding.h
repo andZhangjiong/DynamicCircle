@@ -1,1 +1,0 @@
-../../../WCDB/objc/WCDB/interface/builtin/WCTSequence+WCTTableCoding.h

@@ -1,1 +1,0 @@
-../../../WCDB/objc/WCDB/abstract/statement_create_index.hpp

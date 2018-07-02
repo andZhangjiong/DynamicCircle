@@ -1,1 +1,0 @@
-../../../WCDB/objc/WCDB/abstract/clause_join.hpp
