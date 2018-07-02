@@ -140,23 +140,23 @@
                     gifLable.hidden = NO;
                     gifLable.text = @"GIF";
                     
-                    NSData *imageData = [[SDImageCache sharedImageCache] diskImageDataBySearchingAllPathsForKey:url];
-                    
-                    if (imageData) {
-                        imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:imageData];
-                    }
-                    else {
-                        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:url] options:SDWebImageDownloaderUseNSURLCache progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-                        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-                            if (image) {
-                                [[SDImageCache sharedImageCache] storeImageDataToDisk:data forKey:url];
-                                
-                                dispatch_async(dispatch_get_main_queue(), ^{
-                                    imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:data];
-                                });
-                            }
-                        }];
-                    }
+//                    NSData *imageData = [[SDImageCache sharedImageCache] diskImageDataBySearchingAllPathsForKey:url];
+//
+//                    if (imageData) {
+//                        imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:imageData];
+//                    }
+//                    else {
+//                        [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:url] options:SDWebImageDownloaderUseNSURLCache progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+//                        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+//                            if (image) {
+//                                [[SDImageCache sharedImageCache] storeImageDataToDisk:data forKey:url];
+//
+//                                dispatch_async(dispatch_get_main_queue(), ^{
+//                                    imageView.animatedImage = [FLAnimatedImage animatedImageWithGIFData:data];
+//                                });
+//                            }
+//                        }];
+//                    }
                 }
                 else if ([gifLable.text isEqualToString:@"MP4"]) {
                     
