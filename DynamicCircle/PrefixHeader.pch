@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  DynamicCircle
+//
+//  Created by 张炯 on 2018/7/2.
+//  Copyright © 2018年 张炯. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <SDAutoLayout.h>
+#import <MJExtension.h>
+#import <SVProgressHUD.h>
+
+#import "UIColor+hex.h"
+#import "HXTool.h"
+
+
+#pragma DEFINE
+
+#define     HXWeakSelf(type)    __weak typeof(type) weak##type = type;
+#define     HXURL(urlString)    [NSURL URLWithString:urlString]
+
+#pragma mark - # SIZE
+
+#define     SIZE_SCREEN                 [UIScreen mainScreen].bounds.size
+#define     WIDTH_SCREEN                [UIScreen mainScreen].bounds.size.width
+#define     HEIGHT_SCREEN               [UIScreen mainScreen].bounds.size.height
+
+#pragma mark - # COLOR
+
+#define  BORDERToWidth_4_Color [UIColor colorWithHex:0xcccccc]
+#define  BORDERToWidth_8_Color [UIColor colorWithHex:0xf0f0f0]
+#define  BORDERToWidth_Line_Color [UIColor colorWithHex:0xE5E5E5]
+#define  BORDER_TextBlack_Color [UIColor colorWithHex:0x444444]
+#define  BORDER_TextGrey1_Color [UIColor colorWithHex:0x8c8c8c]
+
+
+#pragma mark - # IPHONE
+
+#define     iPhone5                     WIDTH_SCREEN == 320
+
+#endif /* PrefixHeader_pch */
