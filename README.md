@@ -1,5 +1,5 @@
 # DynamicCircle
-用UITextView自定义显示控件（可添加图片，可点击特殊字符<姓名，网址，电话>，可复制内容）写的Demo（仿朋友圈）
+整个朋友圈列表中内容及评论控件都是用UITextView自定义（可添加图片，可点击特殊字符<姓名，网址，电话>，可复制内容）写的Demo（仿朋友圈）
 
 下载下来后记得打开PodFile pod注释，pod install下
 
